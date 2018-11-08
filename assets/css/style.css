@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../photos/concrete_seamless.png");
 }
 
 * {
@@ -180,11 +180,14 @@ h3, h2 {
 
 #contact-form ul {
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 #contact-form li {
   margin-bottom: 10px;
 }
+
+
 
 label,
 input[type=text],
@@ -216,28 +219,25 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media only screen and (max-width:980px){
+
+@media screen and (max-width:980px) {
+
   #masthead {
-      max-width: 980px;
       padding-right: 50px;
       padding-left: 50px;
   }
-  .container {
-      max-width: 980px;  
-      overflow: auto;
-  } 
+ 
   .nav {
     margin-right: 15px; 
+  }
+  h1 {
+    margin-top: 0px;
   }
   .main-section {
     float: left;
     max-width: 600px;
     height: auto;
-    padding: 30px;
     margin: 0 0 40px;
-    margin-left: 50px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
   }
   .work {
     position: relative;
@@ -246,21 +246,96 @@ input[type=submit] {
     margin: 20px 0 25px;
     overflow: auto;
   }
-
+  
+  #contact-form ul {
+    margin-bottom: 20px;
+    list-style-type: none;
+    margin-left: -30px;
 }
 
-@media only screen and (max-width:768px){
+  footer {
+    width: 980px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
   #masthead {
-      max-width: 768px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
   }
   .container {
-     width:768px;  
+    width: 100%;
+    padding-left: 15px;
+    overflow: hidden;
   } 
 
- 
+  nav {
+    padding-right: 10px; 
+  }
+
+  h1 {
+    padding-top: 10px;
+  }
+  .main-section {
+    float: left;
+    max-width: 600px;
+    height: auto;
+    margin: 0 0 40px;
+  }
+  #main-container {
+    width: 
 
 
+  }
+    .auth-image {
+      float: left;
+      width: 300px;
+      height: auto;
+      margin-top: 10px;
+      margin-right: 25px;
+      margin-left: 10px; 
+  }  
+  p {
+    margin-bottom: 20px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    line-height: 2;
+  }
+
+  footer {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 640px) {
 
 
-  
+  #masthead {
+    width: 640px;
+  }
+  #logo {
+    max-width: 640px;
+    height: auto;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    clear: both;
+}
+  #main-container {
+    max-width: 640px;
+    padding-left: 0px;
+
+  }
+  .main-section {
+    width: 640px;
+  }
+
+  footer {
+   width: 640px;
+  }
 }
