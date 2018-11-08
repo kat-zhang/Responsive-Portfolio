@@ -221,12 +221,14 @@ input[type=submit] {
 
 
 @media screen and (max-width:980px) {
-
+  
   #masthead {
       padding-right: 50px;
       padding-left: 50px;
   }
- 
+  #main-container {
+    width: 980px;
+  }
   .nav {
     margin-right: 15px; 
   }
@@ -235,9 +237,10 @@ input[type=submit] {
   }
   .main-section {
     float: left;
-    max-width: 600px;
+    max-width:700px;
     height: auto;
     margin: 0 0 40px;
+    margin-left: 120px;
   }
   .work {
     position: relative;
@@ -251,10 +254,6 @@ input[type=submit] {
     margin-bottom: 20px;
     list-style-type: none;
     margin-left: -30px;
-}
-
-  footer {
-    width: 980px;
   }
 }
 
@@ -265,7 +264,9 @@ input[type=submit] {
   #masthead {
     padding-right: 0px;
     padding-left: 0px;
-}
+  }
+  #main-container {
+    width: 768px;
   }
   .container {
     width: 100%;
@@ -274,7 +275,7 @@ input[type=submit] {
   } 
 
   nav {
-    padding-right: 10px; 
+    padding-right: 20px; 
   }
 
   h1 {
@@ -282,60 +283,54 @@ input[type=submit] {
   }
   .main-section {
     float: left;
-    max-width: 600px;
+    max-width: 700px;
     height: auto;
-    margin: 0 0 40px;
+    margin-LEFT: 120px;
   }
-  #main-container {
-    width: 
-
-
+  .auth-image {
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 10px; 
   }
-    .auth-image {
-      float: left;
-      width: 300px;
-      height: auto;
-      margin-top: 10px;
-      margin-right: 25px;
-      margin-left: 10px; 
-  }  
-  p {
+  P{ 
     margin-bottom: 20px;
     margin-inline-start: 10px;
     margin-inline-end: 10px;
-    line-height: 2;
+    line-height: 2; 
   }
 
-  footer {
-    width: 768px;
-  }
 }
 
 @media screen and (max-width: 640px) {
 
-
+  body {
+  
+  }
   #masthead {
-    width: 640px;
+    width: 100%;
   }
   #logo {
-    max-width: 640px;
-    height: auto;
+    width: 640px;
+  }
+  .nav { 
+    clear: both;
   }
   .container {
     max-width: 640px;
     margin: 0 auto;
     clear: both;
-}
+  }
+
   #main-container {
     max-width: 640px;
     padding-left: 0px;
-
   }
   .main-section {
     width: 640px;
   }
 
-  footer {
-   width: 640px;
-  }
+
 }
